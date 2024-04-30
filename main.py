@@ -57,7 +57,7 @@ def facts():
 @bot.message_handler(commands=['start'])
 def start_message(message):
     """Приветствие"""
-    imgs = open('privet2.jpg', 'rb')
+    imgs = open('../../OneDrive/Рабочий стол/privet2.jpg', 'rb')
     bot.send_photo(message.chat.id, imgs)
     bot.send_message(message.chat.id, 'Вы тут в первый раз?')
 
@@ -65,7 +65,7 @@ def start_message(message):
 @bot.message_handler(commands=['help'])
 def start_message(message):
     """Помощь с командами"""
-    imgs = open('kot.jpeg', 'rb')
+    imgs = open('../../OneDrive/Рабочий стол/kot.jpeg', 'rb')
     bot.send_photo(message.chat.id, imgs)
 
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -148,7 +148,7 @@ def get_text_messages(message):
             or message.text.lower() == 'аГА'\
             or message.text.lower() == 'агА'\
             or message.text.lower() == 'аГа':
-        imgs = open('kot2.jpg', 'rb')
+        imgs = open('../../OneDrive/Рабочий стол/kot2.jpg', 'rb')
         bot.send_photo(message.chat.id, imgs)
         bot.send_message(message.chat.id, 'Ваше имя добавлено в базу данных!\n'
                                           'Ура\n'
@@ -174,7 +174,7 @@ def get_text_messages(message):
             or message.text.lower() == 'НЕ'\
             or message.text.lower() == 'Не'\
             or message.text.lower() == 'нЕ':
-        imgs = open('kot5.jpg', 'rb')
+        imgs = open('../../OneDrive/Рабочий стол/kot5.jpg', 'rb')
         bot.send_photo(message.chat.id, imgs)
         bot.send_message(message.chat.id, 'Тогда нажмите /help,  для подсказки.')
 
