@@ -4,7 +4,7 @@ import telebot
 from telebot import types
 
 
-conn = sqlite3.connect('db/films_db.sqlite', check_same_thread=False)
+conn = sqlite3.connect('films.sqlite', check_same_thread=False)
 cursor = conn.cursor()
 
 bot = telebot.TeleBot("6914496932:AAHj7F9AusBjX4c5gqIbjhfsVG1Uy8U7o5Q")
